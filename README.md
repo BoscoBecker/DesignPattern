@@ -26,6 +26,8 @@ This project aims to **convert Design Patterns** examples originally implemented
 
 The examples are based on a YouTube channel that teaches Design Patterns in **PHP**. I am using these examples as a basis to practice concepts in Delphi and understand how the same patterns can be applied in a strongly typed and object-oriented language like Delphi.
 
+Renato Augusto : https://www.youtube.com/watch?v=el1MtIPXTqo&list=PLNHxHgB-_LTt67szNmMsZwqBKq9jH4uKJ&index=1
+
 ## 🚀 How to Run
 
 1. Open Delphi 12.
