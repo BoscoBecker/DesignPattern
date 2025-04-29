@@ -14,10 +14,10 @@ This project aims to **convert Design Patterns** examples originally implemented
 - **Console Application** (without graphical interface)
 - **Patterns studied so far**:
 - Singleton
-- Observer
+- Observer : https://www.youtube.com/watch?v=mv9JxI85Ac8&list=PLNHxHgB-_LTt67szNmMsZwqBKq9jH4uKJ&index=7
 - Strategy
-- Decorator
-- Factory Method
+- Decorator : https://youtu.be/7B60j9EGrrU?si=xrJHLjrzu7FB0vMm
+- Factory Method : https://youtu.be/j5fGTi8ObK4?si=l3P2jbq-JPMf8Ajl
 - etc.
 
 ## 📂 Project Structure
