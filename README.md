@@ -14,6 +14,7 @@ This project aims to **convert Design Patterns** examples originally implemented
 - **Console Application** (without graphical interface)
 - **Patterns studied so far**:
 - Singleton
+- Proxy : https://youtu.be/el1MtIPXTqo?si=5QAzPAgSZQAH4-om
 - Observer : https://youtu.be/mv9JxI85Ac8?si=D9K3-3Frc-K9xYWc
 - Strategy
 - Decorator : https://youtu.be/7B60j9EGrrU?si=xrJHLjrzu7FB0vMm
