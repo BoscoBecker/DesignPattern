@@ -16,7 +16,7 @@ This project aims to **convert Design Patterns** examples originally implemented
 - Singleton
 - Proxy : https://youtu.be/el1MtIPXTqo?si=5QAzPAgSZQAH4-om
 - Observer : https://youtu.be/mv9JxI85Ac8?si=D9K3-3Frc-K9xYWc
-- Strategy
+- Strategy : https://youtu.be/DzlXwgsc_AU?si=krFafWcg2PdCxig4
 - Decorator : https://youtu.be/7B60j9EGrrU?si=xrJHLjrzu7FB0vMm
 - Factory Method : https://youtu.be/j5fGTi8ObK4?si=l3P2jbq-JPMf8Ajl
 - etc.
