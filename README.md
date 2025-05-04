@@ -13,13 +13,14 @@ This project aims to **convert Design Patterns** examples originally implemented
 - **Delphi 12 Community Edition**
 - **Console Application** (without graphical interface)
 - **Patterns studied so far**:
-- Singleton
+- Singleton : https://youtu.be/E8ey3HjSthg?si=MnvPH5_WqeSv355D
 - Proxy : https://youtu.be/el1MtIPXTqo?si=5QAzPAgSZQAH4-om
 - Observer : https://youtu.be/mv9JxI85Ac8?si=D9K3-3Frc-K9xYWc
 - Strategy : https://youtu.be/DzlXwgsc_AU?si=krFafWcg2PdCxig4
 - Decorator : https://youtu.be/7B60j9EGrrU?si=xrJHLjrzu7FB0vMm
 - Factory Method : https://youtu.be/j5fGTi8ObK4?si=l3P2jbq-JPMf8Ajl
-- etc.
+- Facade :  Coming soon
+- State :  Coming soon
 
 ## 📂 Project Structure
 
