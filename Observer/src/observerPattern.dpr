@@ -1,4 +1,4 @@
-program observerPattern;
+program ObserverPattern;
 
 {$APPTYPE CONSOLE}
 

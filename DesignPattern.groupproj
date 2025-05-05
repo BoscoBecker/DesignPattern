@@ -1,0 +1,108 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F61A73B7-50FA-4806-8153-A5FE33A16888}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Facade\src\FacadePattern.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Decorator\src\DecoratorPattern.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Observer\src\ObserverPattern.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Proxy\src\ProxyPattern.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Singleton\src\SingletonPattern.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Strategy\src\StrategyPattern.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TemplateMethod\src\TemplateMethodPattern.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="FacadePattern">
+        <MSBuild Projects="Facade\src\FacadePattern.dproj"/>
+    </Target>
+    <Target Name="FacadePattern:Clean">
+        <MSBuild Projects="Facade\src\FacadePattern.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FacadePattern:Make">
+        <MSBuild Projects="Facade\src\FacadePattern.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DecoratorPattern">
+        <MSBuild Projects="Decorator\src\DecoratorPattern.dproj"/>
+    </Target>
+    <Target Name="DecoratorPattern:Clean">
+        <MSBuild Projects="Decorator\src\DecoratorPattern.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DecoratorPattern:Make">
+        <MSBuild Projects="Decorator\src\DecoratorPattern.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ObserverPattern">
+        <MSBuild Projects="Observer\src\ObserverPattern.dproj"/>
+    </Target>
+    <Target Name="ObserverPattern:Clean">
+        <MSBuild Projects="Observer\src\ObserverPattern.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ObserverPattern:Make">
+        <MSBuild Projects="Observer\src\ObserverPattern.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ProxyPattern">
+        <MSBuild Projects="Proxy\src\ProxyPattern.dproj"/>
+    </Target>
+    <Target Name="ProxyPattern:Clean">
+        <MSBuild Projects="Proxy\src\ProxyPattern.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ProxyPattern:Make">
+        <MSBuild Projects="Proxy\src\ProxyPattern.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SingletonPattern">
+        <MSBuild Projects="Singleton\src\SingletonPattern.dproj"/>
+    </Target>
+    <Target Name="SingletonPattern:Clean">
+        <MSBuild Projects="Singleton\src\SingletonPattern.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SingletonPattern:Make">
+        <MSBuild Projects="Singleton\src\SingletonPattern.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="StrategyPattern">
+        <MSBuild Projects="Strategy\src\StrategyPattern.dproj"/>
+    </Target>
+    <Target Name="StrategyPattern:Clean">
+        <MSBuild Projects="Strategy\src\StrategyPattern.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="StrategyPattern:Make">
+        <MSBuild Projects="Strategy\src\StrategyPattern.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TemplateMethodPattern">
+        <MSBuild Projects="TemplateMethod\src\TemplateMethodPattern.dproj"/>
+    </Target>
+    <Target Name="TemplateMethodPattern:Clean">
+        <MSBuild Projects="TemplateMethod\src\TemplateMethodPattern.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TemplateMethodPattern:Make">
+        <MSBuild Projects="TemplateMethod\src\TemplateMethodPattern.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="FacadePattern;DecoratorPattern;ObserverPattern;ProxyPattern;SingletonPattern;StrategyPattern;TemplateMethodPattern"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="FacadePattern:Clean;DecoratorPattern:Clean;ObserverPattern:Clean;ProxyPattern:Clean;SingletonPattern:Clean;StrategyPattern:Clean;TemplateMethodPattern:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="FacadePattern:Make;DecoratorPattern:Make;ObserverPattern:Make;ProxyPattern:Make;SingletonPattern:Make;StrategyPattern:Make;TemplateMethodPattern:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

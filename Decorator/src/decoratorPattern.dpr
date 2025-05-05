@@ -1,4 +1,4 @@
-program decoratorPattern;
+program DecoratorPattern;
 
 {$APPTYPE CONSOLE}
 
@@ -11,6 +11,7 @@ uses
   BasicImageProcessor in 'ImageProcessor\BasicImageProcessor.pas',
   WaterMarkImageProcessor in 'ImageProcessor\WaterMarkImageProcessor.pas';
 begin
+  ReportMemoryLeaksOnShutdown:= True;
   try
     var imagePath:= GetCurrentDir() + '\file.bmp';
     var processor: IImageProcessor;

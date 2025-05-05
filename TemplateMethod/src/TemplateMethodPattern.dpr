@@ -1,4 +1,4 @@
-program templateMethod;
+program TemplateMethodPattern;
 
 {$APPTYPE CONSOLE}
 
