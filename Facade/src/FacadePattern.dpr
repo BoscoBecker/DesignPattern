@@ -15,15 +15,15 @@ uses
   ShippingService in 'Service\ShippingService.pas';
 begin
   ReportMemoryLeaksOnShutdown:= True;
-  var OrderDetails := TJSONObject.Create;
+  var orderDetails := TJSONObject.Create;
   var order:= TOrderFacade.Create();
   try
     try
-      OrderDetails.AddPair('amount', TJSONNumber.Create(123.45));
-      OrderDetails.AddPair('email', 'cliente@exemplo.com');
-      OrderDetails.AddPair('productId',178);
-      OrderDetails.AddPair('quantity', TJSONNumber.Create(2));
-      order.processOrder(OrderDetails);
+      orderDetails.AddPair('amount', TJSONNumber.Create(123.45));
+      orderDetails.AddPair('email', 'cliente@exemplo.com');
+      orderDetails.AddPair('productId',178);
+      orderDetails.AddPair('quantity', TJSONNumber.Create(2));
+      order.processOrder(orderDetails);
       Readln;
     except
       on E: Exception do Writeln(E.ClassName, ': ', E.Message);
