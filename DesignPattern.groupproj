@@ -24,6 +24,9 @@
         <Projects Include="TemplateMethod\src\TemplateMethodPattern.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="State\src\StatePattern.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -95,14 +98,23 @@
     <Target Name="TemplateMethodPattern:Make">
         <MSBuild Projects="TemplateMethod\src\TemplateMethodPattern.dproj" Targets="Make"/>
     </Target>
+    <Target Name="StatePattern">
+        <MSBuild Projects="State\src\StatePattern.dproj"/>
+    </Target>
+    <Target Name="StatePattern:Clean">
+        <MSBuild Projects="State\src\StatePattern.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="StatePattern:Make">
+        <MSBuild Projects="State\src\StatePattern.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="FacadePattern;DecoratorPattern;ObserverPattern;ProxyPattern;SingletonPattern;StrategyPattern;TemplateMethodPattern"/>
+        <CallTarget Targets="FacadePattern;DecoratorPattern;ObserverPattern;ProxyPattern;SingletonPattern;StrategyPattern;TemplateMethodPattern;StatePattern"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="FacadePattern:Clean;DecoratorPattern:Clean;ObserverPattern:Clean;ProxyPattern:Clean;SingletonPattern:Clean;StrategyPattern:Clean;TemplateMethodPattern:Clean"/>
+        <CallTarget Targets="FacadePattern:Clean;DecoratorPattern:Clean;ObserverPattern:Clean;ProxyPattern:Clean;SingletonPattern:Clean;StrategyPattern:Clean;TemplateMethodPattern:Clean;StatePattern:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="FacadePattern:Make;DecoratorPattern:Make;ObserverPattern:Make;ProxyPattern:Make;SingletonPattern:Make;StrategyPattern:Make;TemplateMethodPattern:Make"/>
+        <CallTarget Targets="FacadePattern:Make;DecoratorPattern:Make;ObserverPattern:Make;ProxyPattern:Make;SingletonPattern:Make;StrategyPattern:Make;TemplateMethodPattern:Make;StatePattern:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
