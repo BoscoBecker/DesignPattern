@@ -21,6 +21,7 @@ This project aims to **convert Design Patterns** examples originally implemented
 - Factory Method : https://youtu.be/j5fGTi8ObK4?si=l3P2jbq-JPMf8Ajl
 - Facade : https://youtu.be/4Aq9UHQ5f5Y?si=pnXDBTBAJEcjawl3
 - State :  https://youtu.be/OrCgWzpNszk?si=UzMHU48HfweFC9Rn
+- Adapter: https://youtu.be/Fg1kEjaaBrs?si=kSC2sMMR1GPXApi7
 
 ## 📂 Project Structure
 
