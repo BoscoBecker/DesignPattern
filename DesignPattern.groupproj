@@ -9,7 +9,7 @@
         <Projects Include="Decorator\src\DecoratorPattern.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="Observer\src\ObserverPattern.dproj">
+        <Projects Include="Observer\src\observerPattern.dproj">
             <Dependencies/>
         </Projects>
         <Projects Include="Proxy\src\ProxyPattern.dproj">
@@ -25,6 +25,9 @@
             <Dependencies/>
         </Projects>
         <Projects Include="State\src\StatePattern.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Adapter\src\AdapterPattern.dproj">
             <Dependencies/>
         </Projects>
     </ItemGroup>
@@ -53,14 +56,14 @@
     <Target Name="DecoratorPattern:Make">
         <MSBuild Projects="Decorator\src\DecoratorPattern.dproj" Targets="Make"/>
     </Target>
-    <Target Name="ObserverPattern">
-        <MSBuild Projects="Observer\src\ObserverPattern.dproj"/>
+    <Target Name="observerPattern">
+        <MSBuild Projects="Observer\src\observerPattern.dproj"/>
     </Target>
-    <Target Name="ObserverPattern:Clean">
-        <MSBuild Projects="Observer\src\ObserverPattern.dproj" Targets="Clean"/>
+    <Target Name="observerPattern:Clean">
+        <MSBuild Projects="Observer\src\observerPattern.dproj" Targets="Clean"/>
     </Target>
-    <Target Name="ObserverPattern:Make">
-        <MSBuild Projects="Observer\src\ObserverPattern.dproj" Targets="Make"/>
+    <Target Name="observerPattern:Make">
+        <MSBuild Projects="Observer\src\observerPattern.dproj" Targets="Make"/>
     </Target>
     <Target Name="ProxyPattern">
         <MSBuild Projects="Proxy\src\ProxyPattern.dproj"/>
@@ -107,14 +110,23 @@
     <Target Name="StatePattern:Make">
         <MSBuild Projects="State\src\StatePattern.dproj" Targets="Make"/>
     </Target>
+    <Target Name="AdapterPattern">
+        <MSBuild Projects="Adapter\src\AdapterPattern.dproj"/>
+    </Target>
+    <Target Name="AdapterPattern:Clean">
+        <MSBuild Projects="Adapter\src\AdapterPattern.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AdapterPattern:Make">
+        <MSBuild Projects="Adapter\src\AdapterPattern.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="FacadePattern;DecoratorPattern;ObserverPattern;ProxyPattern;SingletonPattern;StrategyPattern;TemplateMethodPattern;StatePattern"/>
+        <CallTarget Targets="FacadePattern;DecoratorPattern;observerPattern;ProxyPattern;SingletonPattern;StrategyPattern;TemplateMethodPattern;StatePattern;AdapterPattern"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="FacadePattern:Clean;DecoratorPattern:Clean;ObserverPattern:Clean;ProxyPattern:Clean;SingletonPattern:Clean;StrategyPattern:Clean;TemplateMethodPattern:Clean;StatePattern:Clean"/>
+        <CallTarget Targets="FacadePattern:Clean;DecoratorPattern:Clean;observerPattern:Clean;ProxyPattern:Clean;SingletonPattern:Clean;StrategyPattern:Clean;TemplateMethodPattern:Clean;StatePattern:Clean;AdapterPattern:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="FacadePattern:Make;DecoratorPattern:Make;ObserverPattern:Make;ProxyPattern:Make;SingletonPattern:Make;StrategyPattern:Make;TemplateMethodPattern:Make;StatePattern:Make"/>
+        <CallTarget Targets="FacadePattern:Make;DecoratorPattern:Make;observerPattern:Make;ProxyPattern:Make;SingletonPattern:Make;StrategyPattern:Make;TemplateMethodPattern:Make;StatePattern:Make;AdapterPattern:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
