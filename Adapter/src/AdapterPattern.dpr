@@ -14,7 +14,7 @@ uses
 begin
   ReportMemoryLeaksOnShutdown:= True;
   try
-   //var adapter:= TTCPDFAdapter.Create; // Have'nt Support ? don't worry ...
+   //var adapter:= TTCPDFAdapter.Create; // Haven't Support ? don't worry ...
    var adapter:= TDomPDFAdapter.Create;
    var salesReport:= TSalesReportGenerator.Create(adapter);
     try
